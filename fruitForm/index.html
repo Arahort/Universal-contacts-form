@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alex Arahort Universal Form</title>
+	<!-- Подключаем стили или добавляем их в существующий файл -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> <!--Если отсутствует F.A.-->
+	<link rel="stylesheet" href="/fruitForm/css/fruitForm.css">
+	<!-- Подключаем скриптыили добавляем их в существующий файл -->
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script> <!--Если отсутствует jQuery-->
+	<script src="/fruitForm/js/jquery.maskedinput.min.js" type="text/javascript"></script> <!--Если отсуствует плагин маски-->
+	<script src="/fruitForm/js/fruitForm.js" type="text/javascript"></script>
+</head>
+<body>
+	<form class="fruitForm">
+		<!-- Hidden settings -->
+		<input type="hidden" name="project_name" value="Alex Arahort Portal">
+		<input type="hidden" name="admin_email" value="alex@arahort.pro">
+		<input type="hidden" name="form_subject" value="Форма обратной связи">
+		<!-- END Hidden settings -->
+		<fieldset>
+			<legend class="legend">Заказать звонок</legend>
+			<div class="input">
+				<input name="Имя" type="text" placeholder="Имя" required  />
+				<span><i class="fa fa-user"></i></span>
+			</div>
+			<div class="input">
+				<input name="Телефон" type="text" class="fruitPhone" placeholder="Телефон" required />
+				<span><i class="fa fa-phone"></i></span>
+			</div>
+			<div class="input">
+				<input name="Email" type="email" placeholder="Email" required />
+				<span><i class="fa fa-envelope"></i></span>
+			</div>
+			<div class="input">
+				<textarea name="Сообщение" placeholder="Сообщение"></textarea>
+				<span><i class="fas fa-pencil-alt"></i></span>
+			</div>
+			<button type="submit" class="submit"><i class="fas fa-check"></i></button>
+		</fieldset>
+		<div class="fruitSuccess">Сообщение успешно отправлено <br />Наш менеджер свяжется с вами в ближайшее время</div>
+	</form>
+
+	<!--Modal test-->
+	<a href="#one-form">Открыть модальное окно</a>
+	<div class="fruitModal" id="one-form">
+		<form class="fruitForm">
+			<span class="fruitModal-close">X</span>
+			<!-- Hidden settings -->
+			<input type="hidden" name="project_name" value="Alex Arahort Portal">
+			<input type="hidden" name="admin_email" value="alex@arahort.pro">
+			<input type="hidden" name="form_subject" value="Форма обратной связи">
+			<!-- END Hidden settings -->
+			<fieldset>
+				<legend class="legend">Заказать звонок</legend>
+				<div class="input">
+					<input name="Имя" type="text" placeholder="Имя" required  />
+					<span><i class="fa fa-user"></i></span>
+				</div>
+				<div class="input">
+					<input name="Телефон" type="text" class="fruitPhone" placeholder="Телефон" required />
+					<span><i class="fa fa-phone"></i></span>
+				</div>
+				<div class="input">
+					<input name="Email" type="email" placeholder="Email" required />
+					<span><i class="fa fa-envelope"></i></span>
+				</div>
+				<div class="input">
+					<textarea name="Сообщение" placeholder="Сообщение"></textarea>
+					<span><i class="fas fa-pencil-alt"></i></span>
+				</div>
+				<button type="submit" class="submit"><i class="fas fa-check"></i></button>
+			</fieldset>
+			<div class="fruitSuccess">Сообщение успешно отправлено <br />Наш менеджер свяжется с вами в ближайшее время</div>
+		</form>
+	</div>
+
+</body>
+</html>
